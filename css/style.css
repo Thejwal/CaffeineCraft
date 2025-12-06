@@ -72,7 +72,12 @@ body {
 	flex-wrap: wrap;
 }
 
-
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.2rem; /* adjust as needed */
+        line-height: 1.4;
+    }
+}
 @keyframes glow {
     0%, 20% {
         color: white;
