@@ -69,6 +69,7 @@ body {
     display: inline-block;
     color:  #0d1f1a;
     animation: glow 3s infinite;
+	flex-wrap: wrap;
 }
 
 
