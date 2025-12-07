@@ -15,7 +15,9 @@ body {
 
 .hero {
     position: relative;
+    width: 100%;
     height: 100vh;
+    min-height: -webkit-fill-available; /* iOS Safari fix */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -55,14 +57,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: px;
+    gap: 5px;
 }
 
 .logo-wrapper {
     width: 250px;
     height: 250px;
     background: #0d0d0d;
-    border-radius: 100%;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,15 +74,15 @@ body {
 .logo-wrapper img.logo-blend {
     width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .hero-content img.logo-blend {
     width: 200px;
     max-width: 80vw;
     border-radius: 50%;
-    background: #0d0d0d;  /* optional, can remove if logo already has background */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4); /* softer shadow */
+    background: #0d0d0d;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 .hero-content h1 {
@@ -98,12 +100,12 @@ body {
     text-align: center;
     max-width: 100%;       
     white-space: nowrap;   
-    margin: 15px;              /* remove default top/bottom margin */
+    margin: 15px;
     padding: 10px;
 }
 
 .hero-content h2 + h2 {
-    margin-top: 5px;       /* small space between the two lines */
+    margin-top: 5px;
 }
 
 .hero-content span {
@@ -112,9 +114,8 @@ body {
     animation: glow 3s infinite;
     margin: 0;
     padding: 0;
-	font-size: 20px;
+    font-size: 20px;
 }
-
 
 /* Glow animation */
 @keyframes glow {
@@ -127,15 +128,6 @@ body {
         text-shadow: none;
     }
 }
-
-/* Responsive adjustment */
-@media (max-width: 480px) {
-    .hero-content h2 {
-        font-size: 0.7rem;  /* shrink text on mobile */
-        gap: 1px;
-    }
-}
-
 
 .hero-content p {
     font-size: 1.1rem;
@@ -434,14 +426,15 @@ footer {
 }
 
 /* ------------------------------------------------- */
-/*        FULL RESPONSIVE MOBILE FIXES (STRONG)      */
+/*        FULL RESPONSIVE MOBILE FIXES             */
 /* ------------------------------------------------- */
 
 @media (max-width: 480px) {
 
     .hero {
-        height: auto;
-        padding: 40px 10px;
+        height: 100vh;
+        min-height: -webkit-fill-available;
+        padding: 20px 10px;
     }
 
     .logo-wrapper {
@@ -457,22 +450,20 @@ footer {
         font-size: 2rem;
     }
 
-.hero-content span {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    gap: 1px;
-	font-size: 15px;
-	padding: 7px;
-}
-
+    .hero-content span {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1px;
+        font-size: 12px;  /* reduced blinking text */
+        padding: 5px 0;
+    }
 
     .hero-content p {
         font-size: 1rem;
     }
 
-    /* Floating icons */
     .float-wrapper {
         left: 10px;
         top: 10px;
@@ -484,7 +475,6 @@ footer {
         height: 40px;
     }
 
-    /* Map button */
     .map-btn {
         right: 10px;
         top: 10px;
@@ -492,7 +482,6 @@ footer {
         font-size: 12px;
     }
 
-    /* Slider shrink */
     .slide {
         flex: 0 0 180px;
     }
@@ -500,7 +489,6 @@ footer {
         height: 180px;
     }
 
-    /* Services: stack vertically */
     .slide-track-service {
         flex-wrap: wrap;
         justify-content: center;
@@ -511,7 +499,6 @@ footer {
         height: 220px;
     }
 
-    /* About */
     .about h2 {
         font-size: 1.7rem;
     }
@@ -519,7 +506,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Instagram */
     .instagram-wrapper {
         height: 400px;
     }
@@ -527,7 +513,6 @@ footer {
         height: 400px;
     }
 
-    /* Footer */
     footer {
         font-size: 0.8rem;
     }
