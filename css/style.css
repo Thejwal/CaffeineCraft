@@ -106,12 +106,13 @@ body {
     margin-top: 5px;       /* small space between the two lines */
 }
 
-.hero-content h2 span {
+.hero-content span {
     display: block; 
     color: #0d1f1a;
     animation: glow 3s infinite;
     margin: 0;
     padding: 0;
+	font-size: 40px;
 }
 
 
@@ -463,6 +464,7 @@ footer {
     text-align: center;
     gap: 1px;
     font-size: clamp(0.8rem, 4vw, 1.5rem);
+	font-size: 40px;
 }
 
 
