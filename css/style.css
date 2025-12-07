@@ -456,7 +456,7 @@ footer {
         font-size: 2rem;
     }
 
-.hero-content h2 {
+.hero-content span {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
