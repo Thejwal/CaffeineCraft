@@ -488,7 +488,7 @@ footer {
     right: 25px; /* increase the value to move it left */
     top: 15px;
     padding: 6px 12px;
-    font-size: 8px;
+    font-size: 11px;
 }
     .slide {
         flex: 0 0 180px;
