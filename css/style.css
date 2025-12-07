@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .logo-wrapper {
@@ -463,7 +463,7 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 1px;
-	font-size: 5px;
+	font-size: 15px;
 }
 
 
