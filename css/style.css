@@ -444,7 +444,7 @@ footer {
     .logo-wrapper {
         width: 150px;
         height: 150px;
-		margin-top: 20px; 
+		margin-top: 30px; 
     }
 
     .hero-content img.logo-blend {
@@ -482,13 +482,12 @@ footer {
         height: 40px;
     }
 
-    .map-btn {
-        right: 10px;
-        top: 10px;
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-
+.map-btn {
+    right: 20px; /* increase the value to move it left */
+    top: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+}
     .slide {
         flex: 0 0 180px;
     }
