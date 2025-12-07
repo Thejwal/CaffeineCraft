@@ -61,8 +61,8 @@ body {
 }
 
 .logo-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background: #0d0d0d;
     border-radius: 50%;
     display: flex;
@@ -442,9 +442,9 @@ footer {
     }
 
     .logo-wrapper {
-        width: 150px;
-        height: 150px;
-		margin-top: 30px; 
+        width: 100px;
+        height: 100px;
+		margin-top: 40px; 
     }
 
     .hero-content img.logo-blend {
@@ -462,13 +462,14 @@ footer {
         text-align: center;
         gap: 1px;
         font-size: 12px;  /* reduced blinking text */
-        padding: 5px 0;
+        padding: 15px 0;
     }
 
     .hero-content p {
         font-size: 1rem;
 		margin-top: 15px;
 		padding: 40px;
+		color: black;
     }
 
     .float-wrapper {
@@ -483,10 +484,10 @@ footer {
     }
 
 .map-btn {
-    right: 20px; /* increase the value to move it left */
-    top: 10px;
+    right: 25px; /* increase the value to move it left */
+    top: 15px;
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 8px;
 }
     .slide {
         flex: 0 0 180px;
