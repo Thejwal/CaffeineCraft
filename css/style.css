@@ -130,7 +130,7 @@ body {
 /* Responsive adjustment */
 @media (max-width: 480px) {
     .hero-content h2 {
-        font-size: 1.2rem;  /* shrink text on mobile */
+        font-size: 0.7rem;  /* shrink text on mobile */
         gap: 1px;
     }
 }
