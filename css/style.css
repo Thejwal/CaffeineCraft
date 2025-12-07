@@ -146,9 +146,9 @@ body {
     text-decoration: none;
     background: #518a63;
     color: black;
-    padding: 12px 30px;
+    padding: 12px 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 15px;
     transition: 0.3s ease;
     border: 1px solid #2ecc71;
     font-weight: bold;
