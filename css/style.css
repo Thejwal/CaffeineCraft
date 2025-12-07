@@ -462,7 +462,7 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 1px;
-    font-size: clamp(1rem, 5vw, 2rem); /* Adjust font size based on screen */
+    font-size: clamp(0.8rem, 4vw, 1.5rem);
 }
 
 
